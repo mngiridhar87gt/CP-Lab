@@ -1,0 +1,14 @@
+// to multiply two numbers
+#include <stdio.h>
+void main()
+{
+    int a,b,mult;
+printf("enter two numbers:");
+scanf("%d%d",&a,&b);
+if(a>b)
+{
+   mult=a*b;
+}
+else mult=b*a;
+printf("mult=%d",mult);
+}
