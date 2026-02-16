@@ -1,0 +1,26 @@
+#include <stdio.h>
+struct student
+{
+    char ID[50];
+    char name [50];
+    float marks;
+};
+int main()
+{
+    struct student s1={"25132", "Siddhant", 90};
+    printf("STUDENT ID:%s\t STUDENT NAME: %s\t MARKS OBTAINED:%f\t\n", s1.ID, s1.name, s1.marks);
+
+    struct student s2={"25BTCE133", "Giridahr", 90};
+    printf("STUDENT ID:%s\t STUDENT NAME: %s\t MARKS OBTAINED:%f\t\n", s2.ID, s2.name, s2.marks);
+
+    struct student s3={"25BTCE134", "Shreays", 90};
+    printf("STUDENT ID:%s\t STUDENT NAME: %s\t MARKS OBTAINED:%f\t\n", s3.ID, s3.name, s3.marks);
+
+    struct student s4={"25BTCE135", "APS", 90};
+    printf("STUDENT ID:%s\t STUDENT NAME: %s\t MARKS OBTAINED:%f\t\n", s4.ID, s4.name, s4.marks);
+
+    struct student s5={"25BTCE136", "Adhin", 90};
+    printf("STUDENT ID:%s\t STUDENT NAME: %s\t MARKS OBTAINED:%f\t\n", s5.ID, s5.name, s5.marks);
+
+    return 0;
+}
