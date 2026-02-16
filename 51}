@@ -1,0 +1,72 @@
+#include <stdio.h>
+
+/*function declerations*/
+void inputarray(int*arr, int n);
+void displayarray(int*arr, int n);
+int sumArray(const int *arr, int n);
+int countPositive(const int *arr, int n);
+int countNegative(const int *arr, int n);
+
+int main(void) {
+int arr[100];
+printf("Enter the number of elements in the array (max 100): ");
+
+if (scanf("%d", &n) != 1 || n < 0 || n > 100)
+{
+puts("Invalid size.");
+
+return 1;
+}
+inputArray(arr, n);
+
+printf("\nArray elements are: ");
+
+displayArray(arr, n);
+int n, sum, posCount, negCount,
+ sum=sumarray(arr,n);
+printf("\nsum of all elements=%d sum);
+pos count = countpositive(arr,n)
+neg count = countnegative (arr,n);
+
+printf("\n number of positive elements=%d", pos count);
+printf("\n number of negative elements=%d\n", neg count);
+return 0;
+}
+    /*read n integer into array via pointer arthimetic*/
+    void inputarray (int*arr, int n){
+    printf("enter %d elements:\n",n);
+    for (int i=0;i<n;i++){
+        scanf("%d", arr+i);
+    }
+    }
+    /*pointer array elements*/
+    void displayarray (const int *arr, int n){
+    for (int i+0;i<n;i++){
+        printf("%d",*arr + i)
+        }
+    }
+    //function to calculate sum of arrays elements
+    int sumarray (int*arr,int n){
+    int sum=0
+    for(int i=0; i<n;i++){
+        sum+ = *(arr+i);
+    }
+return sum;
+    }
+    /*countpositive(>0)*/
+    int countpositive (count int*arr,int n){
+    int count = 0;
+    for(int i=0;i<n;i++
+    {
+    if(*(arr+i)>0)int++
+    }
+    return count;
+    }
+    int countnegative (const int*arr,int n)
+    {
+        int count = 0;
+        for(int i=0;i<n;i++){
+       if (*(arr+i)<0)int++;
+       }
+       return count;
+    }

@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+struct books
+{
+    char title[20];
+    char author[20];
+    float price;
+};
+int main()
+{
+    struct books b1 = {"c programming-1", "Dennis Ritchie", 599};
+    struct books b2 = {"c programming-2", "Dennis Ritchie", 599};
+    struct books b3 = {"c programming-3", "Dennis Ritchie", 599};
+    struct books b4 = {"c programming-4", "Dennis Ritchie", 599};
+    struct books b5 = {"c programming-5", "Dennis Ritchie", 599};
+    struct books *book[5] = {&b1,&b2,&b3,&b4,&b5};
+    for(int i=0; i<5; i++)
+    {
+        printf("%s %s %f\n" , book[i]->title,book[i]->author,book[i]->price);
+    };
+    return 0;
+}
+

@@ -1,0 +1,20 @@
+#include<stdio.h>
+typedef struct
+{
+    int emp_ID;
+    char Name[20];
+    float salary[10];
+}
+employee;
+int main()
+{
+    employee e1 = {1, "Jay", 15000};
+    employee e2 = {3, "Jaya", 16000};
+    employee e3 = {8, "Jayanth", 17000};
+    employee *e={&e1,&e2,&e3};
+    for(int i=0;i<3;i++)
+    {
+        printf("emp_ID: %d\n Name: %s\n salary: %f\n" ,e[i] emp_ID, e[i] name, e[i] salary);
+    }
+    return 0;
+}

@@ -1,0 +1,16 @@
+#include<stdio.h>
+typedef struct
+{
+    int emp_id;
+    char name [20];
+    float salary;
+}
+employe;
+int main()
+{
+    employe e1 = {1001,"Kiran",45000.00};
+    printf("employe id: %d\n", e1.emp_id);
+    printf("name: %s\n", e1.name);
+    printf("salary: %.2f", e1.salary);
+    return 0;
+}
